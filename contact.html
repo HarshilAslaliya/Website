@@ -122,8 +122,8 @@
 								</ul>
 							</div>
 							<div class="contact-right wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-								<form class="contact-form" id="contact-form"
-									action="https://themetum.com/ailng/php/contact.php" method="POST">
+								<form class="contact-form" id="contact-form" action="https://formspree.io/f/xnqkrblk"
+									method="POST">
 									<div class="row g-4">
 										<div class="col-md-6">
 											<input type="text" name="name" class="form-control input-style-2"
@@ -208,7 +208,6 @@
 							<ul class="footer-social">
 								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 							</ul>
 						</div>
@@ -253,7 +252,22 @@
 	<script src="assets/js/splitting.min.js"></script>
 	<script src="assets/js/splitting-animation.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="https:smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username: "technologiesinnovatix@gmail.com",
+				Password: "Innovatix@709",
+				To: 'technologiesinnovatix@gmail.com',
+				From: document.getElementById("email").value,
+				Subject: "New Contact Form Enquiry",
+				Body: "And this is the body"
+			}).then(
+				message => alert(message)
+			);
+		}
+	</script>
 </body>
 
 
