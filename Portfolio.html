@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innovatix technologies</title>
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <!-- bootstrep link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/Home.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+
+    <!-- **** CSS-LINK **** -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- **** JS-LINK **** -->
+    <script src="assets/script/jquery-3.7.1.min.js"></script>
+    <script src="assets/script/owl.carousel.min.js"></script>
+    <script src="./assets/script/js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        function counter() {
+            var count = setInterval(function () {
+                var c = document.getElementById("counter");
+                var int = parseInt(c.textContent);
+                c.textContent = (++int).toString();
+                if (int == 100) {
+                    clearInterval(count);
+                    c.classList.add("hide");
+                    document.getElementById("preloader").classList.add("slide-up");
+                }
+            }, 2)
+        }
+        counter();
+    </script>
+</head>
+
+
+<body>
+
+
+    <!-- preloader start -->
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-after"></div>
+        <div class="preloader-before"></div>
+        <div class="preloader-block">
+            <div class="title">Innovatix INFOTECH</div>
+            <div class="counters" id="counter">
+                0
+            </div>
+            <div class="loading">loading...</div>
+        </div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+    </div>
+
+    <!-- preloader end -->
+
+
+    <!-- header start -->
+    <div class="navbarr">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="./Home.html"><img src="./assets/img/logo.svg" alt="logo"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse ps-5" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link " aria-current="page" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item  fw-bolder dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./services.html">Web Devlopment</a></li>
+                                <li><a class="dropdown-item" href="./app.html">Application Development</a></li>
+                                <li><a class="dropdown-item" href="./uiux.html">UI-UX Design</a></li>
+                                <li><a class="dropdown-item" href="./ecommerce.html"> E -Commerece Development</a></li>
+                                <li><a class="dropdown-item" href="./game.html"> Game Development</a></li>
+                                <li><a class="dropdown-item" href="./aiml.html"> AI-ML Development</a></li>
+                                <li><a class="dropdown-item" href="./digital.html">Digital Marekting</a></li>
+                                <li><a class="dropdown-item" href="./custom.html">Custom Software</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link active" href="./Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./career.html">Career</a>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./Contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <a href="./Contact.html">Free Quote</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- header end  -->
+    <!-- Portfolio main start  -->
+    <div class="main">
+        <div class="container">
+            <div class="main-inner">
+                <h1>Portfolio</h1>
+                <p>We investigate bytes to develop solutions that reimagine the technology environment of the future
+                    while promoting imaginative thinking.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio main end  -->
+    <!-- Portfolio img start  -->
+
+
+    <div class="img-text">
+        <div class="container">
+            <div class="imgtext-inner">
+                <div class="text">
+                    <span>Let'S Discuss</span>
+                    <h3>About Your <b> Next Project </b></h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="img-blog">
+        <div class="container">
+            <div class="img-inner">
+                <div class="d-flex mt-4 justify-content-center">
+                    <ul class="nav nav-pills d-flex m-2 scrollmenu" id="pills-tab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link clr active" id="pills-web-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-web"
+                                aria-selected="true">Web Development</button>
+                        </li>
+
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link clr  " id="pills-app-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app"
+                                aria-selected="false">App Development</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link clr  " id="pills-game-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-game" type="button" role="tab" aria-controls="pills-game"
+                                aria-selected="false">Game Development</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link clr  " id="pills-ui-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-ui" type="button" role="tab" aria-controls="pills-ui"
+                                aria-selected="false">Ui Ux Design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link clr  " id="pills-com-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-com" type="button" role="tab" aria-controls="pills-com"
+                                aria-selected="false">E - Commerce</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="pills-tabContent" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
+
+                    <div class="tab-pane fade show active" id="pills-web" role="tabpanel"
+                        aria-labelledby="pills-web-tab" tabindex="0">
+                        <div class="inner-block  active-content ">
+                            <div class="bottom ">
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://www.travala.com/" target="_blank"><img
+                                                src="./assets/img/web(1).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Travala
+                                            </strong>
+                                            <p>React-Node js
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://parinlabgrown.com/" target="_blank"><img
+                                                src="./assets/img/web(2).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Parinlabgrown
+                                            </strong>
+                                            <p>React
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://www.thedustland.com/" target="_blank"><img
+                                                src="./assets/img/web(3).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Feeld
+                                            </strong>
+                                            <p>React
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://www.wearfigs.com/" target="_blank"><img
+                                                src="./assets/img/web(4).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Wearfigs
+                                            </strong>
+                                            <p>React
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://staging.d3pupeg590zqt7.amplifyapp.com/" target="_blank"><img
+                                                src="./assets/img/web(5).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Thedustland
+                                            </strong>
+                                            <p>React
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://garyapp.netlify.app/" target="_blank"><img
+                                                src="./assets/img/web(6).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>gary
+                                            </strong>
+                                            <p>React
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab"
+                        tabindex="0">
+                        <div class="inner-block">
+                            <div class="bottom">
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=in.diyos.crm"
+                                            target="_blank"><img src="./assets/img/app(1).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Diyos CRM
+                                            </strong>
+                                            <p>Android-React Native
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://apps.apple.com/in/app/unizap/id1438955605" target="_blank"><img
+                                                src="./assets/img/app(2).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Unizap
+                                            </strong>
+                                            <p>Android-Flutter
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://apps.apple.com/in/app/dukaan-create-online-dukan/id1560859298"
+                                            target="_blank"><img src="./assets/img/app(3).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Dukaan
+                                            </strong>
+                                            <p>Flutter-Android
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=co.feeld&hl=en-IN"
+                                            target="_blank"><img src="./assets/img/app(4).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Feeld
+                                            </strong>
+                                            <p>Flutter-Android
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=com.user.rjmart"
+                                            target="_blank"><img src="./assets/img/app(5).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Grocery APP
+                                            </strong>
+                                            <p>Android
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=com.MashVirtual.ZamitOne"
+                                            target="_blank"><img src="./assets/img/app(6).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Zamit
+                                            </strong>
+                                            <p>Android
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-game" role="tabpanel" aria-labelledby="pills-game-tab"
+                        tabindex="0">
+                        <div class="inner-block">
+                            <div class="bottom">
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=com.nividata.mathmatrix"
+                                            target="_blank"><img src="./assets/img/game(1).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Math Puzzle
+                                            </strong>
+                                            <p>Unity
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=com.RayGaming.WishingWell"
+                                            target="_blank"><img src="./assets/img/game(2).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Wishing Well
+                                            </strong>
+                                            <p>Unity
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://cafebazaar.ir/app/com.carromboard.carrompoolcarromboardgame?l=en"
+                                            target="_blank"><img src="./assets/img/game(3).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Carrom Board Game
+                                            </strong>
+                                            <p>Unity
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://play.google.com/store/apps/details?id=com.gamingstok.bubbleshooterresuce"
+                                            target="_blank"><img src="./assets/img/game(4).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Bubble Shooter forest
+                                            </strong>
+                                            <p>Unity
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-ui" role="tabpanel" aria-labelledby="pills-ui-tab"
+                        tabindex="0">
+                        <div class="inner-block">
+                            <div class="bottom">
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="#" target="_blank"><img src="./assets/img/ui(1).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>SaaS Mobile App
+
+                                            </strong>
+                                            <p>Figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="#" target="_blank"><img src="./assets/img/ui(2).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>QR Scanner App
+
+                                            </strong>
+                                            <p>Figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="#" target="_blank"><img src="./assets/img/ui(3).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                VPN App
+
+                                            </strong>
+                                            <p>Figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="#" target="_blank"><img src="./assets/img/ui(4).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Bus Booking
+
+                                            </strong>
+                                            <p>Figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="#" target="_blank"><img src="./assets/img/ui(5).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>E-Commerce
+
+                                            </strong>
+                                            <p>Figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="#" target="_blank"><img src="./assets/img/ui(6).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>E-Commerce
+
+                                            </strong>
+                                            <p>Figma
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-com" role="tabpanel" aria-labelledby="pills-com-tab"
+                        tabindex="0">
+                        <div class="inner-block">
+                            <div class="bottom">
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://www.thesurgicalist.com/" target="_blank"><img
+                                                src="./assets/img/com(1).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Diyos CRM
+                                            </strong>
+                                            <p>Wordpress
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://chaime.com.au/" target="_blank"><img
+                                                src="./assets/img/com(2).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Unizap
+                                            </strong>
+                                            <p>Wordpress
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://bondisands.com/" target="_blank"><img
+                                                src="./assets/img/com(3).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Dukaan
+                                            </strong>
+                                            <p>Wordpress
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://www.aksclothings.com/" target="_blank"><img
+                                                src="./assets/img/com(4).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>
+
+                                                Feeld
+                                            </strong>
+                                            <p>Shopify
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://masseycapital.ca/" target="_blank"><img
+                                                src="./assets/img/com(5).png" alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Masseycapital.ca
+                                            </strong>
+                                            <p>Shopify
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-cards">
+                                    <div class="cards-img">
+                                        <a href="https://octics.com/" target="_blank"><img src="./assets/img/com(6).png"
+                                                alt="app" /></a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="middle">
+                                            <strong>Zamit
+                                            </strong>
+                                            <p>Shopify
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio img end  -->
+
+
+
+
+    <!-- footer start  -->
+    <div class="footer">
+        <div class="container">
+            <div class="inner-block">
+                <div class="footer-inner">
+
+                    <div class="cards">
+                        <div class="footer-title">
+                            <strong>ABOUT</strong>
+                        </div>
+                        <div class="details">
+                            <p>
+                                Innovatix Technologies is a IT Solutions company in India , providing Mobile
+                                Applications, Web
+                                and
+                                IT solutions to small, medium and large companies on a local and international scale.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="footer-title">
+                            <strong>
+                                OUR SERVICES
+                            </strong>
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <a href="./services.html"><i class="fa-solid fa-arrow-right"></i>Web Development</a>
+
+                                </li>
+                                <li>
+                                    <a href="./custom.html"><i class="fa-solid fa-arrow-right"></i>Custom Software</a>
+
+                                </li>
+                                <li>
+                                    <a href="./ecommerce.html"><i class="fa-solid fa-arrow-right"></i>e-commerce
+                                        development</a>
+                                </li>
+                                <li>
+                                    <a href="./app.html"><i class="fa-solid fa-arrow-right"></i>Application
+                                        development</a>
+                                </li>
+                                <li>
+                                    <a href="./uiux.html"><i class="fa-solid fa-arrow-right"></i>UI UX Designing</a>
+                                </li>
+                                <li>
+                                    <a href="./game.html"><i class="fa-solid fa-arrow-right"></i>Game Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="footer-title">
+                            <strong>CONATCT INFO</strong>
+                        </div>
+                        <div class="details">
+                            <p>
+                                F - 144, ABC Mall 2, Near Sudama Chowk, Mota Varachha, Surat, Gujarat 394101
+                            </p>
+                            <div class="phone">
+                                Mo :
+                                <a href="tel:9328949821"> +91 9328949821</a> <br />
+                                <a href="tel:9925049821" style="padding-left: 33px;"> +91 9925049821</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+
+                <p>
+                    by <span>innovatixtechnologies</span> © 2022 All rights reserved
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- footer end  -->
+    <!-- scrool  to top  -->
+    <p class="back-to-top"><i class="fa-solid fa-angle-up"></i></p>
+
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $(".back-to-top").fadeIn();
+            } else {
+                $(".back-to-top").fadeOut();
+            }
+        });
+        $(".back-to-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000)
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>

@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innovatix technologies</title>
+    <link rel="icon" href="./assets/img/favicon.png" />
+
+
+    <!-- bootstrep link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/Home.css">
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <!-- **** CSS-LINK **** -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- **** JS-LINK **** -->
+    <script src="assets/script/jquery-3.7.1.min.js"></script>
+    <script src="assets/script/owl.carousel.min.js"></script>
+    <script src="./assets/script/js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function counter() {
+            var count = setInterval(function () {
+                var c = document.getElementById("counter");
+                var int = parseInt(c.textContent);
+                c.textContent = (++int).toString();
+                if (int == 100) {
+                    clearInterval(count);
+                    c.classList.add("hide");
+                    document.getElementById("preloader").classList.add("slide-up");
+                }
+            }, 2)
+        }
+        counter();
+    </script>
+</head>
+
+
+
+
+<body>
+
+
+    <!-- preloader start -->
+
+    <div class="preloader" id="preloader">
+        <div class="preloader-after"></div>
+        <div class="preloader-before"></div>
+        <div class="preloader-block">
+            <div class="title">Innovatix INFOTECH</div>
+            <div class="counters" id="counter">
+                0
+            </div>
+            <div class="loading">loading...</div>
+        </div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+    </div>
+
+    <!-- preloader end -->
+
+
+    <!-- header start -->
+
+    <div class="navbarr">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="./Home.html"><img src="./assets/img/logo.svg" alt="logo"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse ps-5" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link  active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item  fw-bolder dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./services.html">Web Devlopment</a></li>
+                                <li><a class="dropdown-item" href="./app.html">Application Development</a></li>
+                                <li><a class="dropdown-item" href="./uiux.html">UI-UX Design</a></li>
+                                <li><a class="dropdown-item" href="./ecommerce.html"> E -Commerece Development</a></li>
+                                <li><a class="dropdown-item" href="./game.html"> Game Development</a></li>
+                                <li><a class="dropdown-item" href="./aiml.html"> AI-ML Development</a></li>
+                                <li><a class="dropdown-item" href="./digital.html">Digital Marekting</a></li>
+                                <li><a class="dropdown-item" href="./custom.html">Custom Software</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./career.html">Career</a>
+                        </li>
+                        <li class="nav-item  fw-bolder">
+                            <a class="nav-link" href="./Contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="btn">
+                    <a href="./Contact.html">Free Quote</a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!-- header end  -->
+
+
+
+
+    <!-- slider start -->
+
+
+    <div class="slider">
+        <div class="container">
+            <div class="inner-block">
+                <div class="slider-inner row align-items-center">
+                    <div class="text col-12 col-md-6 ">
+                        <b> Creative Multi-Services IT Agency </b>
+                        <h1>We’re Digital <br />
+                            <span class="txt-type" data-wait="3000"
+                                data-words='["Application Development", "Web Development", "UI-UX Design ", "Digital Marketing"]'></span><br />
+                            Agency
+                        </h1>
+                        <p> Innovatix Technologies is your one-stop destination for top-notch Website & Application
+                            Development solutions. We help you get go digital and unlock your business potential. </p>
+
+                        <a href="./about.html">Explore More<i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+
+                    <div class="main-img col-12 col-md-6">
+                        <img src="./assets/img/2590504.svg" alt="main-img " class="image-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider end  -->
+
+
+
+    <!--  client start -->
+    <div class="client">
+        <div class="container">
+            <div class="inner-block">
+                <div class="client-inner">
+
+                    <div class="counter-container client-cards">
+                        <div class="count percent counter" data-count="100">0</div>
+                        <h6>ACTIVE CLIENTS</h6>
+                    </div>
+
+
+
+                    <div class="counter-container client-cards">
+                        <div class="count percent counter" data-count="250">0</div>
+                        <h6>PROJECTS DONE</h6>
+                    </div>
+
+                    <div class="counter-container client-cards">
+
+                        <div class="count percent counter" data-count="360">0</div>
+                        <h6>IT EXPERTS</h6>
+                    </div>
+
+                    <div class="counter-container client-cards">
+
+                        <div class="count percent counter" data-count="7">0</div>
+                        <h6>GLORIOUS YEARS</h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  client end  -->
+
+
+
+
+    <!-- our start  -->
+    <div class="our">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    Our Specialization
+                </h2>
+            </div>
+
+            <div class="inner-block">
+                <div class="our-inner">
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/coding%20-%20Copy.svg" alt="icon"
+                                        width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="./assets/img/coding.svg" alt="icon" width="70"
+                                        height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    Web Development </h3>
+                            </div>
+                            <p>We are creating elite and responsive websites with a cost-effective and flexible approach
+                                with our excellent technology</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/app-development.svg" alt="icon"
+                                        width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="./assets/img/app-development%20-%20Copy.svg"
+                                        alt="icon" width="70" height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    Application Development </h3>
+                            </div>
+                            <p>For industry-leading Android app development.We believe building an app needs
+                                amalgamation of passion.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/design%20-%20Copy.svg" alt="icon"
+                                        width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="./assets/img/design.svg" alt="icon" width="70"
+                                        height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    UI UX Design</h3>
+                            </div>
+                            <p>Stimulate the “Wow” Response from your Target Audience with Intelligent and Creative
+                                UI/UX Designing.</p>
+                        </div>
+                    </div>
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/online-shopping%20(1).svg" alt="icon"
+                                        width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog "
+                                        src="./assets/img/online-shopping%20(1)%20-%20Copy.svg" alt="icon" width="70"
+                                        height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    E -Commerece Development</h3>
+                            </div>
+                            <p>We are creating elite and responsive websites with a cost-effective and flexible approach
+                                with our excellent technology</p>
+                        </div>
+                    </div>
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/game-dev%20-%20Copy.svg" alt="icon"
+                                        width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="assets/img/game-dev.svg" alt="icon" width="70"
+                                        height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    Game Development</h3>
+                            </div>
+                            <p>They do this by coding visual elements, programming features, and testing iterations
+                                until a game is ready for market.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/ai-ml%20(1).svg" alt="icon" width="70"
+                                        height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="./assets/img/ai-ml.svg" alt="icon" width="70"
+                                        height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    AI\ML Development</h3>
+                            </div>
+                            <p>We leverage machine learning technologies and AI algorithms to build innovative
+                                and communication.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/bullhorn%20(1).svg" alt="icon"
+                                        width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="./assets/img/bullhorn.svg" alt="icon"
+                                        width="70" height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    Digital Marekting</h3>
+                            </div>
+                            <p>We have experience to put and discover more leads.Improve visibility for your brand and
+                                products</p>
+                        </div>
+                    </div>
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><img class="icon " src="./assets/img/software-development%20(1).svg"
+                                        alt="icon" width="70" height="70" /></a>
+
+                                <a href="#"> <img class="icon-blog " src="./assets/img/software-development.svg"
+                                        alt="icon" width="70" height="70" /></a>
+                            </div>
+
+                            <div class="title">
+                                <h3>
+                                    Custom Software</h3>
+                            </div>
+                            <p>Create your own team of developers for your software development project on short term,
+                                at affordable prices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our end  -->
+
+
+
+    <!-- work start  -->
+    <div class="work">
+        <div class="container">
+            <div class="work-inner">
+                <div class="title">
+                    <h2>Technologies we work with</h2>
+                </div>
+                <div class="d-flex mt-4 justify-content-center ">
+                    <ul class="nav  nav-pills d-flex m-2  scrollmenu" id="pills-tab" role="tablist">
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link clr      active" id="pills-Frontend-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Frontend" type="button" role="tab" aria-controls="pills-Frontend"
+                                aria-selected="true">Frontend</button>
+                        </li>
+
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link clr  " id="pills-Backend-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-Backend" type="button" role="tab" aria-controls="pills-Backend"
+                                aria-selected="false">Backend</button>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link clr  " id="pills-database-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-database" type="button" role="tab" aria-controls="pills-database"
+                                aria-selected="false"> Databases</button>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link clr  " id="pills-mobile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile"
+                                aria-selected="false"> Mobile Development</button>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link clr  " id="pills-commerce-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-commerce" type="button" role="tab" aria-controls="pills-commerce"
+                                aria-selected="false">E-Commerce</button>
+                        </li>
+
+                        <li class="nav-item " role="presentation">
+                            <button class="nav-link clr  " id="pills-project-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-project" type="button" role="tab" aria-controls="pills-project"
+                                aria-selected="false">Project Manger</button>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-Frontend" role="tabpanel"
+                        aria-labelledby="pills-Frontend-tab" tabindex="0">
+                        <div class="bottom frontend  active-content">
+                            <div class="inner-block">
+                                <div class="work-bottom">
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/react.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>React.js</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/angular.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Angular</h4>
+                                    </div>
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/300px-Vue-removebg-preview.png" alt="" width="50"
+                                                height="50" /></a>
+                                        <h4>vue.js</h4>
+                                    </div>
+                                    <div>
+                                    </div>
+
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/nextjs.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Next js</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/materialui.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Material ui</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/bootstrep.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Bootstrap</h4>
+                                    </div>
+
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/html-5.png" alt="" width="50" height="50" /></a>
+                                        <h4>html</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/kisspng-web-development-cascading-style-sheets-css3-comput-css-5ada20be146fc2.8807141415242446700837-removebg-preview.png"
+                                                alt="" width="50" height="50" /></a>
+                                        <h4>css</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/Untitled-removebg-preview.png" alt="" width="50"
+                                                height="50" /></a>
+                                        <h4>Tailwindcss</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/ant-design-logo-EAB6B3D5D9-seeklogo.com-removebg-preview.png"
+                                                alt="" width="50" height="50" /></a>
+                                        <h4>ant design</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="pills-Backend" role="tabpanel" aria-labelledby="pills-Backend-tab"
+                        tabindex="0">
+                        <div class="bottom backend">
+                            <div class="inner-block">
+                                <div class="work-bottom">
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/nodejs.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>node.js</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/nestjs.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Nest</h4>
+                                    </div>
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/laravel.svg" alt="" width="50" height="50" /></a>
+                                        <h4>laravel</h4>
+                                    </div>
+
+
+
+
+
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/php.svg" alt="" width="50" height="50" /></a>
+                                        <h4>php</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/python.svg" alt="" width="50" height="50" /></a>
+                                        <h4>python</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/flask.svg" alt="" width="50" height="50" /></a>
+                                        <h4>flask</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/django.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Django</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="pills-database" role="tabpanel" aria-labelledby="pills-database-tab"
+                        tabindex="0">
+
+
+
+                        <div class="bottom database">
+
+                            <div class="inner-block">
+                                <div class="work-bottom">
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/mongodb.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>mongodb</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/mysql.svg" alt="" width="50" height="50" /></a>
+                                        <h4>mysql</h4>
+                                    </div>
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/postgresql.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Postgresql</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/firebase.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Firebase</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/Sqlite.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Sqlite</h4>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab"
+                        tabindex="0">
+
+                        <div class="bottom  mobile">
+                            <div class="inner-block">
+                                <div class="work-bottom">
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/Apple.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>ios</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/android.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Android</h4>
+                                    </div>
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/flutter.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Flutter</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src=" ./assets/img/reactnative.svg" alt="" width="50" height="50" /></a>
+                                        <h4>React Native</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-commerce" role="tabpanel" aria-labelledby="pills-commerce-tab"
+                        tabindex="0">
+
+                        <div class="bottom e-commerce">
+                            <div class="inner-block">
+                                <div class="work-bottom">
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/shopify.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>Shopify</h4>
+                                    </div>
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/wordpress.svg" alt="" width="50" height="50" /></a>
+                                        <h4>Wordpress</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab"
+                        tabindex="0">
+
+                        <div class="bottom project">
+                            <div class="inner-block">
+                                <div class="work-bottom">
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/jira.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>Jira</h4>
+                                    </div>
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/asana.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>Asana</h4>
+                                    </div>
+                                    <div class="work-cards  ">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/slack.svg" alt="react" width="50" height="50" /></a>
+                                        <h4>Slack</h4>
+                                    </div>
+
+
+
+                                    <div class="work-cards">
+                                        <a href="#"><img data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                                                src="./assets/img/images-removebg-preview.png" alt="" width="50"
+                                                height="50" /></a>
+                                        <h4>trello</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- work end  -->
+
+
+
+    <!-- <div className="blank"> -->
+    <div class="blank">
+        <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+            <div class="contact">
+                <div class="container">
+                    <div class="contact-inner">
+                        <h2>
+                            Get In Touch with US
+                        </h2>
+                        <p>
+                            Thanks for showing an interest. We need some basic information from you to serve you better.
+                        </p>
+                        <a href="#">Contact Us<i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- review start  -->
+
+    <div class="review">
+        <div class="container">
+            <div class="review-inner">
+                <div class="title">
+                    <h2>What They Say<br />
+                        About Our Company?</h2>
+                </div>
+
+
+                <div class="owl-carousel owl-theme ">
+                    <div class="item">
+                        <div class="text">
+                            <p> Great work as fast and reliable. Always able to find the right
+                                solutions and very often suggest enhancements that makes the
+                                projects better - the best freelancer.</p>
+                        </div>
+                        <div class="name">
+                            <h4>Emilia Clarke</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <p>I would recommend this company to everyone! Responds quickly and
+                                always satisfies my needs. He knows a lot and is also
+                                giving me tips and stuff.</p>
+                        </div>
+                        <div class="name">
+                            <h4>Sumit Gajera</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <p>Innovatix Technologies gives amazing work wow i am so happy with
+                                the results thank you million times and also I'll
+                                create best relationship with Innovatix.
+                            </p>
+                        </div>
+                        <div class="name">
+                            <h4>Mohit Mindray</h4>
+                            <span>Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- review end  -->
+
+    <!-- about start  -->
+    <div class="about">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    Let's Talk About Your Requirement
+                </h2>
+            </div>
+
+            <div class="inner-block">
+                <div class="about-inner">
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><i class="fa-solid fa-message"></i></a>
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    We will call you!
+                                </h3>
+                            </div>
+                            <p>Your Details please!!</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Skype Us
+                                </h3>
+                            </div>
+                            <p>Live:innovatix Tech</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><i class="fa-brands fa-google"></i></a>
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Email Us
+                                </h3>
+                            </div>
+                            <p>contact@innovatix.tech</p>
+                        </div>
+                    </div>
+
+                    <div class="cards" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="cards-main">
+                            <div class="cards-img">
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    Let's Talk
+                                </h3>
+                            </div>
+                            <p>(+91) 93289 49821 </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- about end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer start  -->
+    <div class="footer">
+        <div class="container">
+            <div class="inner-block">
+                <div class="footer-inner">
+
+                    <div class="cards">
+                        <div class="footer-title">
+                            <strong>ABOUT</strong>
+                        </div>
+                        <div class="details">
+                            <p>
+                                Innovatix Technologies is a IT Solutions company in India , providing Mobile
+                                Applications, Web
+                                and
+                                IT solutions to small, medium and large companies on a local and international scale.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="footer-title">
+                            <strong>
+                                OUR SERVICES
+                            </strong>
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right"></i>Word development</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right"></i>websites maintenes</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right"></i>e-commerce development</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right"></i>apps development</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right"></i>wordpress development</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right"></i>seo optimization</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="footer-title">
+                            <strong>CONATCT INFO</strong>
+                        </div>
+                        <div class="details">
+                            <p>
+                                F - 144, ABC Mall 2, Sudama Chowk, Mota Varachha, Surat, Gujarat 394101
+                            </p>
+                            <div class="phone">
+                                Phone :
+                                <a href="tel:9328949821"> +91 9328949821</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+
+                <p>
+                    by <span>innovatixtechnologies</span> © 2022 All rights reserved
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- footer end  -->
+
+
+    <!-- scrool  to top  -->
+    <p class="back-to-top"><i class="fa-solid fa-angle-up"></i></p>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/script/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            center: false,
+            items: 1,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $(".back-to-top").fadeIn();
+            } else {
+                $(".back-to-top").fadeOut();
+            }
+        });
+        $(".back-to-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000)
+        })
+    </script>
+
+
+
+
+
+
+
+    <!-- count -->
+    <script>
+        var counted = 0;
+        $(window).scroll(function () {
+
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (counted == 0 && $(window).scrollTop() > oTop) {
+                $('.count').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
+
+                        {
+
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
+
+                        });
+                });
+                counted = 1;
+            }
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
